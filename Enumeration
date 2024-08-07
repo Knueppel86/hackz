@@ -4,14 +4,14 @@ NMAP
 
 First Enumeration with Nmap
 
--- nmap -sC -sV -v10 http://ip
+                                  -- nmap -sC -sV -v10 http://ip
 
 for all Ports
 
--- nmap -sC -sV -v10 -p- http://ip
+                                  -- nmap -sC -sV -v10 -p- http://ip
 
 when finding a http
 
--- sudo nano /etc/hosts
+                                  -- sudo nano /etc/hosts
 
 ip Website
