@@ -1,0 +1,15 @@
+smbclient usage most on windows 
+
+how to find a host
+
+                                                                      -- smbclient -L ip
+
+try and error with the hosts , mostly admin with uses
+
+                                                                      -- smbclient \\\\ip\\Admin$ (as example)
+
+mostly get errors , but maybe a free work shares are vulnerable
+
+moving in smbclient when connected like linux (ls cd get)
+
+maybe more to come
