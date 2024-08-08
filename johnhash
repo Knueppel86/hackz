@@ -1,0 +1,10 @@
+hash cracking with John
+
+write hash value in a file like "hash.txt
+
+                                                              -- echo "Befehl" > hash.txt
+
+with "john" and the rockyou.txt we try to hack the hash into a readable password
+
+                                                              -- john -w=/filepath/rockyou.txt hash.txt
+
