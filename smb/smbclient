@@ -4,6 +4,8 @@ how to find a host
 
                                                                       -- smbclient -L ip
 
+                                                                      -- smbclient -N -L \\\\{TARGET_IP}\\
+
 try and error with the hosts , mostly admin with uses
 
                                                                       -- smbclient \\\\ip\\Admin$ (as example)
