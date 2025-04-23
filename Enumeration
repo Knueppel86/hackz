@@ -28,3 +28,7 @@ Directory Search
 Subdomain Search
 
                                   -- ffuf -w /usr/share/seclists/Discovery/DNS/subdomains-top1million-110000.txt   -H "Host: FUZZ.host" -u http://host -fl (anzahl lines)
+
+
+ffuf -w /usr/share/seclists/Usernames/cirt-default-usernames.txt -u "http://nocturnal.htb/view.php?username=FUZZ&file=a.pdf" -H "Cookie: PHPSESSID=3hdgh8t8vijrn8m6ns2lebi7e3" -fw 1170
+
