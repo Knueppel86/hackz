@@ -1,0 +1,33 @@
+nmap : 
+
+sql infos
+
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: mysql
+    ports:
+      - "127.0.0.1:3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: 'MySQLP@$$w0rd!'
+      MYSQL_DATABASE: tickets 
+      MYSQL_USER: sql_svc
+      MYSQL_PASSWORD: sql_password
+
+gitea infos
+
+ersion: '3'
+
+services:
+  gitea:
+    image: gitea/gitea
+    container_name: gitea
+    ports:
+      - "127.0.0.1:3000:3000"
+      - "127.0.0.1:2222:22"  # Optional for SSH access
+    volumes:
+      - /home/developer/gitea/data:/data # Replace with your path
+    environment:
+      - USER_UID=1000
+      - USER_GID=1000
+    restart: always
